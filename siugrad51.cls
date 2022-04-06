@@ -387,7 +387,8 @@
 %%---                 title) to \large\bfseries\centering.   ---
 %%---        (SIU-2): Change vskip 20\p@ to vskip 1\p@.      ---
 %%---        (SIU-2B): Change \Huge to \large and uppercase. ---
-%%---        (SIU-3): Change vskip 40\p@ to vskip 24\p@.     ---
+%%---        (SIU-3): Change vskip 40\p@ to vskip 24\p@.
+%%---        (SIU-31): Change vskip 24\p@ to vskip 0\p@.
 %%---        (SIU-4): Changed something...                   ---
 %%---        (SIU-41): Changed vskip 30\p@ to no vskip       ---
 %%---                  in chapter title, also took out       ---
@@ -406,7 +407,7 @@
     \interlinepenalty\@M
 %    \large\bfseries\centering\uppercase{#1}\par\nobreak  %(SIU-2B)
     \bfseries\centering\uppercase{#1}\par\nobreak  %(SIU-41)
-    \vskip 24\p@      %(SIU-3)
+    \vskip 0\p@      %(SIU-3) %(SIU-31)
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -421,7 +422,7 @@
     \interlinepenalty\@M
 %    \large\bfseries\centering \uppercase{#1}\par\nobreak  %(SIU-2B)
     \bfseries\centering \uppercase{#1}\par\nobreak  %(SIU-41)
-    \vskip 24\p@     %(SIU-3)
+    \vskip 0\p@     %(SIU-3) %(SIU-31)
   }}
 %%--------------------------------------------------------------
 %%---  SIU:  The following section turns on indents after    ---
@@ -878,6 +879,7 @@
 \setlength{\oddsidemargin}{0.05in}  %% SIU-50 was 0.55
 \setlength{\evensidemargin}{0.05in}  %% SIU-50 was 0.55
 \setlength{\parindent}{.4in}
+\setlength{\parskip}{1em}
 \setlength{\abovedisplayskip}{12pt plus0pt minus0pt}
 \setlength{\belowdisplayskip}{12pt plus0pt minus0pt}
 \setlength{\abovedisplayshortskip}{2pt plus0pt minus0pt}
